@@ -1,0 +1,95 @@
+/**
+ *
+ * ABOUT PAGE TOP HERO UNIT
+ * This involves the header area. Call-out section.
+ */
+
+#masthead {
+	// height: 800px;	
+
+	#header-box {
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+	  	@include display(flex);
+	  	@include flex-direction(row);
+	  	@include justify-content(space-around);	
+
+	  	@media ( max-width: 1200px ) {
+			padding-top: 5rem;
+			padding-bottom: 5rem;
+		}
+
+
+		@media ( max-width: 559px ) {
+			padding-top: 5rem;
+			padding-bottom: 0rem;
+		}
+
+
+	  	.content-box {
+	  		// background-color: rgba( $smoke, .5 );
+	  		// background-color: rgba( $steel, .5 );
+	  		border-radius: 50px;
+	  		margin: auto;
+
+	  		h1, h4 {
+	  			color: $smoke;
+	  			text-shadow: 6px 6px 16px black;
+	  			// color: $imb-primary;
+	  			// color: $imb-secondary;
+	  		}
+
+	  		h1 {
+	  			padding-top: 2rem;
+	  			padding-left: 4rem;
+	  			padding-right: 4rem;
+	  			font-size: 5rem;
+	  			font-weight: 300;
+	  		}
+	  		h4 {
+	  			padding-bottom: 2rem;
+	  			font-size: 2.6rem;
+	  			font-weight: 300;
+	  		}
+
+	  		.btn-holder {
+	  			margin-top: 5rem;
+
+	  			.btn {
+	  				padding: 2rem 5rem;
+	  				margin-right: 1rem;
+	  			}
+	  		}
+
+			@media ( max-width: 559px ) {
+	  			// background-color: rgba( $steel, .5 );
+
+
+		  		h1 {
+		  			font-size: 3rem;
+		  			font-weight: 700;
+		  			padding-left: 1rem;
+		  			padding-right: 1rem;
+		  		}
+		  		h4 {
+		  			padding-left: 1rem;
+		  			padding-right: 1rem;
+		  		}
+
+		  		.btn-holder {
+		  			margin-top: 2.5rem;
+
+		  			.btn {
+		  				padding: 2rem 5rem;
+		  				margin-bottom: 1rem;
+		  			}
+		  		}				
+
+			}		  		
+	  	}
+
+	}
+
+	
+} 
+

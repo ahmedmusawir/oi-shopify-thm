@@ -1,0 +1,158 @@
+/**
+ *
+ * Blog Index Page Styles
+ *
+ */
+
+.single-page {
+
+	// background-color: rgba( lighten( $gray-light, 45% ), .8);
+	padding-top: 3rem;
+	padding-bottom: 5rem;
+
+	h1, h2, h3, h4, h5 {
+		color: lighten( $imb-secondary, 5% );
+		padding-right: 2rem;
+		// margin-top: 5rem;
+	}
+
+
+	h1 {
+		font-size: 5rem;
+		font-weight: 300;
+	}
+	h2 {
+		font-size: 4rem;
+		font-weight: 400;
+	}
+	h3 {
+		font-size: 2rem;
+		font-weight: 400;
+	}	
+
+	img {
+		padding: 2rem;
+	}
+
+	blockquote {
+		display: block !important;
+		clear: both !important;
+		text-align: center;
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+
+		background-image: url(/wp-content/uploads/2017/02/block-quote-bg.png);
+		background-position: center center;
+		background-size: cover;
+
+		p {
+			font-size: 3.5rem !important;
+			line-height: 3.5rem;
+			font-style: italic !important;
+		}
+	}	
+
+	.entry-meta {
+		display: none;
+	}
+
+	.entry-header {
+
+		h1 {
+			font-variant: small-caps;
+			font-size: 4rem;
+			font-weight: 500;
+			color: darken( $imb-secondary, 0% );
+			padding-bottom: 1rem;
+			padding-right: 2rem;
+			text-align: center !important;
+		}
+	}
+
+	.entry-content {
+
+		padding-left: 3rem;
+		padding-right: 3rem;
+		font-size: 2rem;
+		font-weight: 300;
+
+		.featured-img {
+			width: 100%;
+			height: auto;
+			padding-right: 0;
+			padding-left: 0;
+			padding-bottom: 3rem;
+		}
+
+		img {
+			// border: 1rem solid red;
+			@media ( max-width: 700px ) {
+				width: 100%;
+			}
+		}		
+
+	}
+	.only-text {
+		padding-top: 2rem;
+		p {
+			font-size: 2rem;
+			font-weight: 300;
+			color: lighten( $imb-gray, 15% );
+		}
+	}
+
+	#single-related-post-block {
+		
+		img {
+			&:hover {
+				opacity: .5;
+			}
+		}		
+	}
+
+	.facebook-comments-block {
+
+		.facebook-comments-title {
+			text-align: center;
+			font-weight: 500;
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

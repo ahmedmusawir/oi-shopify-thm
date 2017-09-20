@@ -1,0 +1,327 @@
+/**
+ *
+ * Praise Page Styles
+ *
+ */
+
+#praise-page-header {
+
+	.overlay {
+		background-color: rgba( $imb-secondary, .7 );
+	}
+
+	.praise-header-image {
+		position: absolute;
+		top: 0;
+		z-index: -100;
+		width: 100%;
+
+		@media ( max-width: 600px ) {
+			margin-top: 5rem;
+		}
+	}
+
+	
+	.container {
+		@media ( min-width: 550px ) {
+			padding-top: 5rem;
+			padding-bottom: 5rem;
+		}
+		
+		.featured-post {
+
+			.headline {
+				color: white;
+				margin-top: 3rem;
+
+				@media ( max-width: 345px ) {
+					font-size: 2.5rem;
+				}
+
+				@media ( min-width: 551px ) and ( max-width: 991px ) {
+					// margin-top: 2rem;
+					font-size: 5rem;
+				}	
+				@media ( min-width: 992px ) {
+					margin-top: 2rem;
+					font-size: 4rem;
+				}
+				@media ( min-width: 1200px ) {
+					margin-top: 2rem;
+					font-size: 6rem;
+				}
+			}
+
+			a {
+				&:hover {
+					text-decoration: none;
+
+					.post-title {
+						color: lighten( $imb-primary, 20% );
+					}
+				}
+			}
+
+			.post-title {
+				color: white;
+				font-size: 2rem;
+
+				@media ( max-width: 345px ) {
+					font-size: 1.6rem;
+				}
+				@media ( min-width: 992px ) {
+					font-size: 3rem;
+				}
+			}
+
+			.btn {
+				// margin-top: 3rem;
+				margin-bottom: 2rem;
+
+			}			
+		}
+	}
+}
+
+
+/**
+ *
+ * Praise Top Text Info Block
+ *
+ */
+
+#praise-text-info-block {
+	background: url(/wp-content/uploads/2017/05/top-hero-bg-400x400-lightest.jpg) fixed;
+	padding-top: 5rem;
+	padding-bottom: 5rem;	
+
+	.flex-container {
+
+		.flex-item {
+			margin-bottom: 1rem;
+			box-shadow: 2px 2px 6px lightgray;
+		}
+
+		@media ( min-width: 768px ) {
+			@include display(flex);
+				flex-wrap: wrap;
+
+			.flex-item {
+				@include flex(1);
+				margin: 1%;
+			}					
+		}
+	}
+
+	.heading {
+		padding-bottom: 3rem;
+	}
+
+	.text-box {
+		padding: 3rem;
+		background: rgba( white, .4 );
+
+		.special {
+			font-size: 2.5rem;
+			font-weight: 700;
+			color: lighten( $imb-secondary, 10% );
+		}
+	}
+}
+
+/**
+ *
+ * Praise Opt-in Block
+ *
+ */
+#praise-page-optin-block {
+	min-height: 400px;
+	padding-top: 4rem;
+	background-color: $imb-secondary;
+	background: url(/wp-content/uploads/2017/05/background-imb-blg-social.jpg) fixed;
+
+
+	@media ( min-width: 500px ) {
+		// border: 1rem solid red;
+		padding-top: 7rem;
+	}
+	
+	.text-block {
+		padding-top: 3rem;
+
+		.sub-heading {
+			color: white;
+		}
+		.heading {
+			color: white;
+			font-weight: 900;
+		}
+		.leadbox-embed {
+			margin-top: 3rem;
+		}
+	}
+
+	.image-block {
+
+		.optin-right-image {
+			// margin-top: -5rem;
+		}
+	}
+
+	@media ( min-width: 769px ) and ( max-width: 992px ) {
+		// border: 1rem solid red;
+		padding-top: 6rem;
+
+		.heading {
+			font-size: 3.5rem;
+		}
+	}
+}
+
+
+/**
+ *
+ * Normal Praise Loop
+ *
+ */
+
+#normal-praise-loop {
+	padding-top: 5rem;
+	padding-bottom: 5rem;	
+
+	.flex-container {
+
+		.flex-item {
+			margin-bottom: 1rem;
+			box-shadow: 2px 2px 6px lightgray;
+		}
+
+		@media ( min-width: 900px ) {
+			@include display(flex);
+			@include justify-content(center);
+				flex-wrap: wrap;
+
+			.flex-item {
+				// @include flex(1);
+				margin: 1%;
+				width: 30%;
+			}					
+		}
+	}
+	
+	.load-more-btn-box {
+		margin-top: 3rem;
+	}		
+
+	.heading {
+		padding-bottom: 1rem;
+		font-size: 2.5rem;
+	}
+	.subheading {
+		margin-bottom: -1rem !important;
+	}
+
+	.text-box {
+		padding: 3rem;
+		background: rgba( white, .4 );
+
+		.praise-text {
+			font-size: 1.8rem;
+			font-weight: 300;
+			color: lighten( $imb-secondary, 10% );
+		}
+	}
+	
+}
+
+/**
+ *
+ * Normal Praise Loop
+ *
+ */
+
+#video-praise-loop {
+	padding-top: 5rem;
+	padding-bottom: 5rem;	
+
+	.flex-container {
+
+		.flex-item {
+			margin-bottom: 1rem;
+			box-shadow: 2px 2px 6px lightgray;
+		}
+
+		@media ( min-width: 900px ) {
+			@include display(flex);
+			@include justify-content(center);
+				flex-wrap: wrap;
+
+			.flex-item {
+				margin: 1%;
+				width: 30%;
+			}					
+		}
+	}
+
+	.load-more-btn-box {
+		margin-top: 3rem;
+	}	
+
+	.heading {
+		padding-bottom: 1rem;
+		font-size: 2.3rem;
+	}
+	.subheading {
+		margin-bottom: -1rem !important;
+	}
+
+	.text-box {
+		padding: 3rem;
+		background: rgba( white, .4 );
+
+		.praise-text {
+			font-size: 1.5rem;
+			font-weight: 300;
+			color: lighten( $imb-secondary, 10% );
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

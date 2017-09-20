@@ -1,0 +1,145 @@
+/**
+ *
+ * Contact  Page Styles
+ *
+ */
+#Acf-Google-Map-Block {
+	// border: 1rem solid red;
+
+}
+
+#Title-Container {
+	background: url(/wp-content/uploads/2017/07/congruent_pentagon.jpg) fixed;
+	// background: url(/wp-content/uploads/2017/07/congruent_pentagon-1.jpg) fixed;
+	// background: lighten( $imb-primary, 15% );
+	// border: 1rem solid red;
+}
+
+#Contact-Main-Content {
+
+	background: url(/wp-content/uploads/2017/07/congruent_pentagon.jpg) fixed;
+	// background: url(/wp-content/uploads/2017/07/congruent_pentagon-1.jpg) fixed;
+	// background: lighten( $imb-primary, 15% );
+
+	h2 {
+		font-weight: 400;
+	}
+	.left-text-content {
+		// border: 1px solid yellow;
+		.contact-social {
+			@media ( max-width: 400px ) {
+				padding-left: 10px;
+			}
+
+			li {
+				display: inline-block;
+				width: 70px;
+				height: 70px;
+				border: 1px solid $imb-third;
+				background-color: $imb-third;
+				text-align: center;
+
+				&:hover {
+					background-color: $imb-primary;
+				}
+
+				
+				@media ( min-width: 790px ) and ( max-width: 1000px ) {
+					// border: 1px solid red;
+					width: 50px;
+					height: 50px;
+				}
+				@media ( max-width: 500px ) {
+					width: 50px;
+					height: 50px;
+				}				
+				
+				a {
+
+					i {
+						padding-top: 2rem;
+						@media ( min-width: 790px ) and ( max-width: 1000px ) {
+							padding-top: 1rem;
+						}
+
+						@media ( max-width: 500px ) {
+							padding-top: 1rem;
+						}
+
+					}
+				}
+			}
+		}
+		.headline-info{
+			padding-top: 5rem;
+		}
+		.content-info {
+			padding-left: 40px;
+
+			@media ( max-width: 400px ) {
+				padding-left: 10px;
+			}
+			// color: white;
+			p {
+				font-size: 2.3rem;
+				line-height: 3rem;
+
+				@media ( max-width: 400px ) {
+					font-size: 2rem;
+				}
+				@media ( min-width: 790px ) and ( max-width: 1000px ) {
+					font-size: 1.5rem;
+					// border: 1px solid red;
+				}
+			}
+		}
+
+	}
+
+	.right-form-content {
+		// border: 1px solid white;
+		#gform_submit_button_1 {
+			border: 1rem solid $imb-third;
+			background-color: $imb-third;
+			color: white;
+			width: 100%;
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

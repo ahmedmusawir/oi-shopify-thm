@@ -1,0 +1,78 @@
+#imb-home-top-roadmap {
+	background-color: $imb-primary;
+	background: url(/wp-content/uploads/2017/06/skulls-jennifer-400x400.jpg) fixed;
+
+	.flex-content-box {
+		// @include align-items(stretch);
+		@include display(flex);
+		@include flex-direction(row);
+		@include justify-content(space-around);
+		flex-wrap: wrap;
+		margin-top: -150px;
+
+		.flex-item {
+			background-color: $imb-third;
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+			width: 320px;
+			margin: 1rem;
+			min-height: 500px;
+			position: relative;
+			margin-bottom: 8rem;
+
+			@media ( max-width: 400px ) {
+				width: 350px;
+			}
+
+
+			.icon-box-holder {
+				position: absolute;
+				left: 28%;
+				top: -15%;
+				border: 1rem solid rgba( white, 0.5);
+				border-radius: 50%;
+
+				@media ( max-width: 350px ) {
+					left: 20%;
+				}
+				@media ( min-width: 351px ) and ( max-width: 400px ) {
+					left: 25%;
+				}
+				@media ( min-width: 401px ) and ( max-width: 500px ) {
+					left: 30%;
+					// border: 2px dotted red;
+				}
+
+				.icon-box {
+					background-color: $imb-primary;
+					border: 1rem solid $imb-primary;
+					border-radius: 50%;
+					width: 120px;
+					height: 120px;
+					padding: 1rem;
+					
+					i {
+						color: white;
+					}
+				}				
+			}
+
+			.headline {
+				margin-top: 30%;
+				color: lighten( $imb-secondary, 10% );
+			}
+			.text-only {
+				color: white;
+				min-height: 250px;
+				// border: 3px dotted white;
+			}
+			.btn-holder {
+				margin-top: 2rem;
+				margin-bottom: 2rem;
+			}
+
+
+		}
+	}
+
+}

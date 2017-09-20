@@ -1,0 +1,40 @@
+/**
+ *
+ * START PAGE TOP ROADMAP 
+ *
+ */
+
+#imb-startpg-top-roadmap {
+	
+	.imb-startpg-top-roadmap-unit {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+
+		.content-box {
+			
+			.headline {
+				margin-bottom: 3rem;
+
+				@media ( max-width: 991px ) {
+					font-size: 2.5rem;
+				}
+				@media ( min-width: 991px ) {
+					// font-size: 2.5rem;
+				}
+			}
+
+			.btn {
+				padding: 1.5rem 5rem;
+				border-radius: 50px;
+
+				@media ( max-width: 991px ) {
+					margin-bottom: 3rem;
+				}
+			}	
+		}
+	}
+	.purple {
+		background-color: lighten( $imb-primary, 30% );
+
+	}
+} 

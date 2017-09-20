@@ -1,0 +1,79 @@
+#imb-aboutpg-testimonial {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	background-color: lighten( $imb-primary, 0% );
+	background-color: darken( $imb-primary, 20% );
+	// background: url(/wp-content/uploads/2017/07/background-transparent-awsome.jpg) fixed;
+	// min-height: 700px;
+
+	.content-box {
+
+		h1 {
+			color: white;
+		}
+
+		#testimonial-slider {
+			#carousel-example-captions {
+
+				.carousel-indicators {
+					margin-top: 15rem;
+					top: 60%;
+
+					@media ( max-width: 550px ) {
+						display: none;
+					}
+
+					.caption-image {
+						height: 50px;
+						width: 50px;
+					}
+					.caption-image.active {
+						background-color: $imb-primary;
+					}
+				}
+				.carousel-inner {
+					min-height: 430px;
+				}
+				.carousel-control.left {
+					background-image: none !important;
+				}
+				.carousel-control.right {
+					background-image: none !important;
+				}
+
+				.item {
+					img {
+						width: 10%;
+					}
+					i {
+						font-size: 4rem;
+						// color: lighten( $gray-light, 10% );
+						color: $imb-primary;
+					}
+
+					h4 {
+						font-size: 1.7rem;
+						font-weight: 300;
+						color: white;
+					}
+					h3 {
+						color: white;
+					}
+
+					.moose-caption {
+						text-align: center;
+						p {
+							font-weight: 300;
+							font-size: 2rem;
+							color: lighten( $imb-primary, 10% );
+						}
+					}				
+				}
+			}			
+		}
+
+		
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+#imb-home-hero-story {
+	padding-bottom: 15rem;
+
+	.content-box {
+
+		.headline {
+			color: $imb-secondary;
+			padding-bottom: 2rem;
+		}
+
+		.content {
+			
+			img {
+				margin-bottom: 4rem;
+				margin-top: 2rem;
+
+				@media ( max-width: 630px ) {
+					width: 100%;
+				}
+				@media ( min-width: 631px ) {
+					padding-left: 2rem;
+				}
+			}
+		}
+
+
+	}
+}

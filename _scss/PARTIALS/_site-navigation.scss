@@ -1,0 +1,165 @@
+/**
+ *
+ * SITE NAVIGATION
+ *
+ */
+
+ /**
+ *
+ * This code helps with the in-between 991 and 768px
+ *
+ */
+
+// @media (min-width: 768px) and (max-width: 991px) {
+//     .navbar-collapse.collapse {
+//         display: none !important;
+//     }
+//     .navbar-collapse.collapse.in {
+//         display: block !important;
+//     }
+//     .navbar-header .collapse, .navbar-toggle {
+//         display:block !important;
+//     }
+//     .navbar-header {
+//         float:none;
+//     }
+// }
+
+// @media (min-width: 551px) and (max-width: 991px) {
+
+// 	.navbar-collapse {
+// 		margin-top: 5rem;
+// 	}
+// }
+
+/**
+ *
+ * Bootstrap Navigation
+ *
+ */
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    // background-color: $imb-primary;
+}
+
+.navbar-container {
+	// border: 1rem solid $imb-primary;
+
+} 
+
+.navbar {
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+	border: 1px solid $gray-lighter;
+	margin-bottom: 0px;
+	background-color: white;
+	// background-color: rgba( $gray-lighter, .2 );
+	font-family: 'Work Sans', sans-serif;
+
+	@media ( max-width: 550px ) {
+		padding-bottom: 4rem;
+	}
+	
+
+	.navbar-brand {
+		.logo-text {
+			padding-top: 2.5rem;
+			padding-left: 10%;
+			color: black;
+			font-weight: 500;
+			// border: 1rem dotted red;
+		}
+		#logo {
+			padding-left: 2rem;
+
+			@media ( max-width: 550px ) {
+				width: 60%;
+			}
+			@media ( min-width: 551px ) {
+				width: 70%;
+			}
+		}
+	}
+	.navbar-toggle {
+
+		border: 3px solid lighten( $imb-primary, 20% );
+		.icon-bar {
+			color: white;
+			background-color: $imb-primary;
+			&:hover {
+				color: white;
+			}
+		}
+	}
+	
+
+	.dropdown-menu {
+		background-color: #101010;
+
+		.current-menu-item {
+			a {
+				color: white;
+			}
+
+		}
+
+		li {
+
+			a {
+				color: darken( $gray-lighter, 20% );
+
+				&:hover {
+					background-color: lighten( $oil, 10% );
+						
+				}
+			}
+		}
+
+	}
+
+	#menu-main-menu {
+		@media ( min-width: 992px ) {
+			// margin-top: 2rem;
+			// margin-bottom: -2rem;
+		}
+
+		// border: 1px solid red;
+		// float: none;
+		margin-left: 27%;
+
+
+		li {
+
+			&:hover {
+				background-color: transparent;
+				// background-color: lighten( $imb-primary, 10% );
+			}
+			a {
+				color: lighten( $imb-secondary, 10% );
+				font-size: 1.6rem !important;
+				font-weight: 400;
+				&:hover {
+					color: lighten( $imb-secondary, 10% );
+				}
+
+				@media ( min-width: 1200px ) {
+					font-size: 1.3rem;
+				}
+			}
+		}
+
+		.current-menu-item {
+			// border: 1rem solid red;
+
+			a {
+				border-radius: 50px;
+				color: $gray-light;
+				background-color: transparent;
+				// background-color: darken( $imb-primary, 0% );
+
+				&:hover {
+					// background-color: lighten( $oil, 10% );
+				}
+			}
+		}
+	}
+}

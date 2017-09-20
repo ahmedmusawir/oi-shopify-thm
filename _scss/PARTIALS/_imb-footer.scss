@@ -1,0 +1,129 @@
+/**
+ *
+ * Footer Styles
+ *
+ */
+
+.footer-container {
+	background-color: darken( $imb-third, 0% );
+	// background: url('/wp-content/uploads/2017/06/heather-skulls.jpg') fixed;
+	// border: 1rem solid red;
+}
+#footer-main {
+
+	text-align: center;
+	
+	#copyright {
+		// text-align: center;
+		padding-top: 2rem;
+		padding-bottom: 3rem;
+
+		ul {
+			font-size: 1.4rem;
+			font-weight: 700;
+			line-height: 1.4rem;
+			color: lighten( $imb-third, 40% );
+			padding-left: 0;
+
+			li {
+				display: inline-block !important;
+			}
+
+			a {
+				color: lighten( $imb-third, 30% );
+			}
+		}
+		
+	}
+
+	.footer-body {
+		padding-top: 3rem;
+
+	}
+
+	.widget-footer {
+		padding-left: 0;
+
+		color: lighten(grey, 30%);
+
+		.widget-title {
+			color: $gray-lighter;
+			padding-bottom: 2rem;
+			padding-top: 5rem;
+		}
+		ul {
+			padding-left: 0;
+		}
+
+		li {
+			display: inline-block;
+			margin-bottom: .2rem;
+			padding: 1rem;
+			list-style: none;
+			@include transition(all 0.5s ease-in-out);
+
+			&:hover {
+				background-color: $steel;
+
+			}
+		}
+
+		a {
+			color: lighten(grey, 30%);
+			font-size: 2rem;
+
+			
+			&:hover {
+				color: white;
+			}
+		}
+	}
+
+	#menu-main-menu-1 {
+		margin-top: 5rem;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			background-color: transparent;
+
+			a {
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 2rem;
+				font-weight: 600;	
+				color: lighten( $imb-secondary, 30% );
+
+				&:hover {
+					color: lighten( $imb-primary, 15% );
+					text-decoration: none;
+				}
+			}
+		}
+
+		.btn-primary {
+			background: $imb-secondary;
+		}
+	}
+
+	.footer-social {
+		padding-top: 2rem;
+
+		li {
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			background-color: $imb-secondary;
+
+			&:hover {
+				background-color: darken( $imb-primary, 20% );
+				// background-color: transparent;
+				// border: 2px solid $imb-secondary;
+			}
+
+			i {
+				font-size: 2.3rem;
+				color: white;
+			}
+		}
+	}
+}

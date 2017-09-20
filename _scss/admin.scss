@@ -1,0 +1,102 @@
+$imb-admin-primary: #36395C;
+$imb-admin-secondary: #A574AE;
+
+
+/**
+ *
+ * Admin Editor Title
+ *
+ */
+#poststuff {
+	#title {
+		border: 2px solid $imb-admin-secondary;
+	}	
+}
+
+/*===============================================
+=            ACF Admin Backend Style            =
+===============================================*/
+
+// #acf-group_591e820b6f612 {
+
+// 	.ui-sortable-handle {
+// 		background-color: $imb-admin-primary;
+// 		color: lighten( $imb-admin-secondary, 20% );
+// 	}
+
+// 	.acf-field {
+// 		background-color: lighten( $imb-admin-secondary, 20% );
+// 	}
+
+// 	.button-link {
+// 		background-color: lighten( $imb-admin-secondary, 20% );
+// 	}
+// }
+
+.postbox.acf-postbox {
+	border: 1px solid $imb-admin-secondary;
+
+	&:hover {
+		box-shadow: 2px 2px 6px gray;
+	}
+
+	.ui-sortable-handle {
+		background-color: $imb-admin-primary;
+		color: lighten( $imb-admin-secondary, 30% );
+
+		.acf-hndle-cog {
+			display:  none !important;
+			// border: 1rem solid red;
+		}
+	}
+
+	.acf-field {
+		background-color: lighten( $imb-admin-secondary, 25% );
+	}
+
+	.inside.acf-fields {
+		background-color: lighten( $imb-admin-secondary, 25% );
+	}
+
+	.button-link {
+		background-color: lighten( $imb-admin-secondary, 20% );
+	}
+
+
+}
+
+/*=====  End of ACF Admin Backend Style  ======*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+#imb-aboutpg-optin-CTA {
+	background-color: lighten( $imb-third, 20% );
+	min-height: 300px;
+
+	.content-box {
+		padding-top: 3rem;
+		// padding-bottom: 3rem;
+		// border: 1px solid red;
+
+		.text-content {
+			text-align: center;
+
+			.headline {
+				color: white;
+				font-weight: 300;	
+				@media ( min-width: 1600px ) {
+					font-size: 3.5rem;
+				}
+			}
+			#gform_submit_button_3 {
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				width: 99%;
+				background: $imb-secondary;
+				color: white;
+				margin: auto;
+				margin-bottom: 3rem;
+			}
+			// .btn {
+			// 	padding: 2rem 5rem;
+			// 	border-radius: 50px;
+			// 	@media ( max-width: 1400px ) {
+			// 		margin-bottom: 5rem;
+			// 	}
+			// 	@media ( min-width: 1600px ) {
+			// 		margin-bottom: 5rem;
+			// 	}
+			// }
+		}
+	}
+	
+}

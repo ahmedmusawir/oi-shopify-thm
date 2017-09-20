@@ -1,0 +1,998 @@
+$imb-primary: #87cfbe; //sea green
+$imb-secondary: #ef4982; //almost hotpink
+$imb-third: #484a4b; //dark slate gray
+
+$imb-light-ash: #EBEFF2;
+$imb-gray: #2A2829; //dark gray
+
+$imb-teal: #5FC5BF;
+$imb-light-gray: #f9fbfc;
+$imb-red: #bb324a;
+
+
+@import "bourbon/bourbon";
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
+
+html { 
+ 
+	// display: none;
+
+}
+
+body {
+
+	font-family: 'Quicksand', sans-serif;
+	p {
+		font-size: 2rem;
+		line-height: 2.5rem;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+
+		@media ( min-height: 800px ) {
+			font-size: 1.6rem;
+			line-height: 2rem;
+			padding-top: .6rem;
+			padding-bottom: .6rem;			
+		}
+	}
+
+	h1,h2,h3,h4,h5 {
+		color: $imb-secondary;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+
+		@media ( min-height: 800px ) {
+			// padding-top: 1rem;
+			// padding-bottom: 1rem;
+		}
+
+	}
+
+	@media ( max-width: 1130px ) {
+		// padding-top: 50px;
+	}
+
+	@media (max-width: 768px ) {
+		// padding-top: 70px;
+	}
+
+	@media (max-width: 450px ) {
+		// padding-top: 75px;
+	}	
+
+}
+
+// body:before {
+//     content: "";
+//     width: 735px;
+//     height: 398px;
+//     position: absolute;
+//     background-image: url(/wp-content/uploads/2017/02/header-bg-2-optimized.png);
+//     left: 0;
+//     display: block;
+//     background-size: 100% 100%;
+//     background-repeat: no-repeat;
+//     transform: scale(.65,.65);
+//     transform-origin: top left;
+//     z-index: 1;
+// }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/**
+ *
+ * WP Admin Bar Lowering
+ *
+ */
+.admin-bar .navbar-fixed-top {
+    margin-top: 30px;
+}
+@media (max-width: 800px) {
+    .admin-bar .navbar-fixed-top {
+        margin-top: 46px;
+    }
+}
+
+
+#content {
+
+	font-family: 'Quicksand', sans-serif;
+
+	background: url() no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+
+	display: none;
+}
+
+
+
+/*==========================================
+=            SITE NAVIGATION               =
+==========================================*/
+
+@import "PARTIALS/site-navigation";
+
+
+
+/*==========================================
+=            General Page Stuff            =
+==========================================*/
+/**
+ *
+ * Convertkit Naked Form
+ *
+ */
+
+.page .ck_form.ck_naked {
+    margin: 0px auto !important;
+    margin-top: -2rem !important;
+    max-width: 700px;
+}		
+
+#page-bottom-widget {
+	// border: 1px solid $imb-teal;
+	margin-top: 5rem;
+
+	#form-box {
+
+		padding: 3rem;
+		background-color: lighten( $imb-teal, 35% );
+
+		h2 {
+			font-size: 2.8rem;
+		}
+		h4 {
+			font-size: 2rem;
+		}
+
+	}
+}
+
+/*=====  End of General Page Stuff  ======*/
+			
+
+/*=======================================
+=            Home page style            =
+=======================================*/
+
+.home {
+	
+	.entry-header {
+		padding-top: 5rem;
+
+		.entry-title {
+			display: none;
+		}		
+	}
+	
+}
+
+/**
+ *
+ * HOMR PAGE HERO UNIT (HEADER.PHP)
+ *
+ */
+@import "PARTIALS/imb-home-top-hero-unit";
+
+
+/**
+ *
+ * HOME PAGE TOP ROADMAP
+ *
+ */
+@import "PARTIALS/imb-home-top-roadmap";
+
+/**
+ *
+ * HOME PAGE SOCIAL PROOF
+ *
+ */
+@import "PARTIALS/imb-home-social-proof";
+
+
+/**
+ *
+ * HOME PAGE INFO BLOCK
+ *
+ */
+@import "PARTIALS/imb-home-info-block";
+
+
+/**
+ *
+ * HOME PAGE TESTIMONIAL
+ *
+ */
+@import "PARTIALS/imb-home-testimonial";
+
+
+/*=====  End of Home page style END  ======*/
+
+
+
+/*=======================================
+=            Start page style            =
+=======================================*/
+
+/**
+ *
+ * HOMR PAGE HERO UNIT 
+ *
+ */
+@import "PARTIALS/imb-startpg-top-hero-unit";
+
+/**
+ *
+ * HOMR PAGE TOP ROADMAP UNIT 
+ *
+ */
+@import "PARTIALS/imb-startpg-top-roadmap";
+
+/**
+ *
+ * HOME PAGE TESTIMONIAL
+ *
+ */
+@import "PARTIALS/imb-startpg-optin-CTA";
+
+
+/**
+ *
+ * HOME PAGE TOP ROADMAP
+ *
+ */
+@import "PARTIALS/imb-startpg-roadmap";
+
+/**
+ *
+ * HOME PAGE TESTIMONIAL
+ *
+ */
+@import "PARTIALS/imb-startpg-testimonial";
+
+
+
+/*=====  End of Start page style END  ======*/
+
+
+
+
+/*====================================
+=            Work With Me            =
+====================================*/
+
+#work-with-me-boxes {
+	img {
+
+		@include transition(all 1.0s ease-in-out);
+
+		&:hover {
+			opacity: .5;
+		}
+	}
+}
+
+/*=====  End of Work With Me  ======*/
+
+
+/**
+ *
+ * Main Content
+ *
+ */
+
+.content-wrapper {
+
+	background-color: rgba( darken( $steel, 0% ), .85);
+	padding-bottom: 5rem;
+
+
+} 
+.content-area {
+	padding: 0;
+}
+
+.site-main {
+	padding: 0;
+	margin-top: 1.1rem;
+
+	.error-404 {
+		color: lighten( $brand-primary, 10% );
+	}
+
+	.none-found {
+		color: lighten( $brand-primary, 20% );
+		font-size: 2rem;
+		padding-left: 1rem;
+	}
+
+
+	.nav-links {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		padding-top: 1.4rem;
+		// background-color: rgba( darken( $steel, 10% ), .85);
+
+
+		a {
+			color: lighten( $brand-primary, 10% );
+		}
+	}
+
+	.navigation {
+
+		.nav-links {
+
+			@include clearfix();
+			padding-bottom: 1.5rem;
+
+			.nav-previous {
+				float: left;
+			}
+			.nav-next {
+				float: right;
+			}
+		}
+	}
+}
+
+
+/**
+ *
+ * Page Styles
+ *
+ */
+
+
+.page-header {
+
+		h1 {
+			text-align: center;
+			font-size: 3rem;
+			color: darken( $imb-primary, 0% );
+		}
+
+}
+
+/**
+ *
+ * BLOG INDEX PAGE STYLES
+ *
+ */
+@import "PARTIALS/_imb-blog-indx-page";
+
+//**** Post footer icons
+
+.cat-links:before {
+	font-family: "FontAwesome";
+	content: "\f07c";
+	margin-right: 0.5em;
+}
+
+.tags-links:before {
+	font-family: "FontAwesome";
+	content: "\f02c";
+	margin-right: 0.5em;
+}
+
+.comments-link:before {
+	font-family: "FontAwesome";
+	content: "\f075";
+	margin-right: 0.5em;
+}
+
+.edit-link:before {
+	font-family: "FontAwesome";
+	content: "\f040";
+	margin-right: 0.5em;
+}
+
+ 
+/**
+ *
+ * Single Page w Sidebar
+ *
+ */
+.single-page {
+
+	// background-color: rgba( lighten( $gray-light, 45% ), .8);
+
+	h1, h2, h3, h4, h5 {
+		color: lighten( $imb-primary, 5% );
+		padding-right: 2rem;
+		margin-top: 5rem;
+	}
+
+
+	h1 {
+		font-size: 5rem;
+		font-weight: 300;
+	}
+	h2 {
+		font-size: 4rem;
+		font-weight: 400;
+	}
+	h3 {
+		font-size: 2rem;
+		font-weight: 400;
+	}	
+
+	img {
+		padding: 2rem;
+	}
+
+	blockquote {
+		display: block !important;
+		clear: both !important;
+		text-align: center;
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+
+		background-image: url(/wp-content/uploads/2017/02/block-quote-bg.png);
+		background-position: center center;
+		background-size: cover;
+
+		p {
+			font-size: 3.5rem !important;
+			line-height: 3.5rem;
+			font-style: italic !important;
+		}
+	}	
+
+	.entry-meta {
+		display: none;
+	}
+
+
+
+	.entry-header {
+
+		h1 {
+			font-variant: small-caps;
+			font-size: 4rem;
+			color: darken( $brand-primary, 10% );
+			padding-bottom: 1rem;
+			padding-right: 2rem;
+			text-align: center !important;
+		}
+	}
+
+	.entry-content {
+
+		padding-left: 3rem;
+		padding-right: 3rem;
+		font-size: 2rem;
+		font-weight: 300;
+
+		.featured-img {
+			width: 100%;
+			height: auto;
+			padding-right: 0;
+			padding-left: 0;
+			padding-bottom: 3rem;
+		}		
+
+	}
+	.only-text {
+		padding-top: 2rem;
+		p {
+			font-size: 2rem;
+			font-weight: 300;
+			color: lighten( $imb-gray, 30% );
+		}
+	}
+
+	#single-related-post-block {
+		
+		img {
+			&:hover {
+				opacity: .5;
+			}
+		}		
+	}
+	
+}
+
+/**
+ *
+ * PRAISE PAGE STYLES
+ *
+ */
+
+ @import "PARTIALS/_imb-praise-page";
+
+/**
+ *
+ * Contact Page Styles
+ *
+ */
+
+ .imb-contact-page-left-text-only {
+
+ 	@media ( min-width: 1400px ) {
+ 		padding-top: 8rem;
+ 	}
+ }
+
+/**
+ *
+ * Side Bar Styles
+ *
+ */
+.sidebar {
+
+	padding-right: 0;
+	margin-top: 4rem;
+	.widget-title {
+		text-align: center;
+		color: $imb-primary !important;
+	}
+
+	/**
+	 *
+	 * Search Sidebar Widget
+	 *
+	 */
+
+	.the-search-form {
+		// padding-left: 4rem;
+		// padding-right: 4rem;
+		#search {
+			// width: 80%;
+			height: 40px
+		}
+		#search-btn {
+			// width: 120%;
+			width: 100px;
+			height: 40px;
+			border: 1px solid $imb-primary;
+			background-color: $imb-primary;
+			color: white;
+			font-size: 2rem;
+
+			@media ( max-width: 1199px ) {
+				width: 80px;
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	/**
+	 *
+	 * Sidebar Social Widget Using the footer social styles
+	 *
+	 */
+		
+	#text-7 {
+		.footer-social {
+			padding-top: 2rem;
+			text-align: center;
+
+			li {
+				height: 50px;
+				width: 50px;
+				border-radius: 50%;
+				background-color: $imb-teal;
+				display: inline-block;
+
+			@include transition(all 0.5s ease-in-out);
+
+				&:hover {
+					background-color: $imb-primary;
+				}
+
+
+				i {
+					font-size: 2.3rem;
+					color: white;
+					padding-top: .5rem;
+					padding-left: .5rem;
+					padding-right: .5rem;
+				}
+			}
+		}		
+
+	}
+
+	/**
+	 *
+	 * 4 Image Anchor Block Widget
+	 *
+	 */
+	
+	#four-img-sidebar-widget {
+
+		border: 1px solid lighten( gray, 40% );
+
+
+		figure {
+			border: 1px solid lighten( gray, 40% );
+
+			img {
+				@include transition(all 1s ease-in-out);
+
+				&:hover {
+					@include transform(scale(0.9) rotate(-3deg));
+
+					@include transform-origin(center top);
+
+				}
+			}
+		}
+	}
+
+
+	// Widget icons
+
+	.widget_recent_comments ul {
+		li:before {
+			color: lighten( $gray-light, 40%);
+		}
+	}
+
+	.widget_archive ul {
+		li:before {
+			color: lighten( $gray-light, 40%);
+		}
+	}
+
+	.widget_categories ul {
+		li:before {
+			color: lighten( $gray-light, 40%);
+		}
+	}
+
+	.widget_pages ul, .widget_nav_menu ul {
+		li:before {
+			color: lighten( $gray-light, 40%);
+		}
+		.children, .sub-menu {
+			li:before {
+			color: lighten( $gray-light, 40%);
+			}
+		}
+		.children .children, .sub-menu .sub-menu {
+			li:before {
+			color: lighten( $gray-light, 40%);
+			}
+		}
+	}
+
+		@media (max-width: 768px) {
+	   		
+		padding-left: 0;
+
+
+	    }
+
+	 /* These are technically the same, but use both */
+	  // overflow-wrap: break-word;
+	  // word-wrap: break-word;
+
+	  // -ms-word-break: break-all;
+	  /* This is the dangerous one in WebKit, as it breaks things wherever */
+	  // word-break: break-all;
+	  /* Instead use this non-standard one: */
+	  // word-break: break-word;
+
+	  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+	  // -ms-hyphens: auto;
+	  // -moz-hyphens: auto;
+	  // -webkit-hyphens: auto;
+	  // hyphens: auto;    
+}
+
+/**
+ *
+ * Widget Styles
+ *
+ */
+
+.widget {
+
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+
+	// background-color: rgba( lighten( $gray-light, 15% ), .7);
+	// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $silver, .1 ) ) left repeat);
+
+
+
+	.widget-title {
+		font-size: 3rem;
+		font-weight: 500;
+		font-variant: small-caps;
+		color: lighten( $imb-gray, 40% );
+		padding-bottom: 2rem;
+		text-transform: uppercase;
+		// font-family: 'Raleway', sans-serif;
+		// font-family: 'Slabo 27px', serif;
+		font-family: 'Cormorant Garamond', serif;
+
+
+
+	}
+
+	.srp-post-content {
+		color: lighten( $imb-gray, 35% );
+	}
+
+	.custom-widget {
+		// border: 1px solid red;
+		h3 {
+		color: lighten( $imb-gray, 0% );
+		text-align: center;
+		}
+		h4 {
+			color: lighten( $imb-gray, 20% );
+			text-align: center;
+		}
+		img {
+			padding-bottom: 2rem;
+			padding-top: 2rem;
+
+			@include transition(all 1.0s ease-in-out);
+
+			&:hover {
+				@include transform(translateY(0px));
+				@include transform(scale(0.9) rotate(0deg));
+				@include transform-origin(center top);
+				@include transform-style(preserve-3d);
+				opacity: .5;
+			}
+		}
+		p {
+			color: lighten( $steel, 40% );
+			text-align: center;
+			font-size: 1.6rem;
+			padding-bottom: 2rem;
+
+		}
+	}
+
+	ul {
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			font-size: 1.5rem;
+			padding: 1rem;
+			font-weight: 300;
+			// font-family: 'Raleway', sans-serif;
+			// font-family: 'Slabo 27px', serif;
+			font-family: 'Cormorant Garamond', serif;
+
+			
+			@include transition(all 0.5s ease-in-out);
+
+			&:hover {
+					color: $gray-lighter;
+				background-color: $imb-primary;
+			}			
+
+			a {
+				display: block;
+				// border: 1px solid red;
+				color: darken( $imb-gray , 10%);
+				// font-family: 'Muli', sans-serif;
+				font-size: 2rem;
+				// font-variant: small-caps;
+				&:hover {
+					text-decoration: none;
+					color: $gray-lighter;
+
+				}
+			}
+
+		}
+	}
+
+	form {
+		padding-bottom: 1rem;
+
+		label {
+			color: $base;
+			// font-variant: small-caps;
+			font-weight: 300;
+			font-size: 1.8rem;
+		}
+	}
+
+}
+
+
+/*=========================================
+=            IMB FOOTER STYLES            =
+=========================================*/
+
+
+// @import "PARTIALS/imb-footer-gustafson";
+@import "PARTIALS/imb-footer";
+
+
+/*=====  End of IMB FOOTER STYLES  ======*/
+
+
+
+/*--------------------------------------------------------------
+10.3 Comments
+--------------------------------------------------------------*/
+.comments-title {
+    font-weight: 900;
+    font-size: 36px;
+    font-size: 3.6rem;
+	font-family: 'Cormorant Garamond', serif;
+
+}
+
+.comments-area > ol {
+    padding: 0;
+    margin: 2em 0;
+    list-style-type: none;
+}
+
+ol.children { list-style-type: none; }
+
+.comment-list ol { margin-left: 50px; }
+
+.comment-meta { margin-bottom: 1em; }
+
+.comment-author .avatar {
+    width: 50px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+.comment-author .fn {
+    font-weight: 900;
+    // font-family: 'Lato', sans-serif;
+	font-family: 'Cormorant Garamond', serif;
+
+    font-size: 20px;
+    font-size: 2rem;
+}
+
+.comment-metadata {
+    font-size: 14px;
+    font-size:1.4rem;
+}
+
+.comment-content { font-size: 90%; }
+
+.comment-content,
+.reply { margin-left: 70px; }
+
+.comment-body {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-bottom: solid hsl(0, 0%, 80%) 1px;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.comment-content ol { margin-left: 1.5em; }
+
+.reply {
+    font-weight: 600;
+    // font-family: 'Lato', sans-serif;
+	font-family: 'Cormorant Garamond', serif;
+
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+/* Comments responsive */
+@media screen and (max-width:600px) {    
+    .comment-list ol { margin-left: 0; }
+    
+    .comment-content ol { margin-left: 1.5em; }
+    
+    .comment-content,
+    .reply { margin-left: 0; }
+}
+       
+
+.bypostauthor > .comment-body {
+    position: relative;
+    padding: 1em;
+    margin-bottom: 2em;
+    background: hsl(0, 0%, 93%);
+    border: none;
+}
+              
+.comment-reply-title {
+    margin-bottom: .5em;
+    font-weight: 900;
+    font-size: 30px;
+    font-size: 3rem;
+}
+
+.comment-form {
+    padding-bottom: 4rem;
+    // font-family: 'Lato', sans-serif;
+	font-family: 'Cormorant Garamond', serif;
+
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+.comment-form textarea {
+    // font-family: 'PT Serif', serif;
+	font-family: 'Cormorant Garamond', serif;
+
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+.comment-form label { display: block; }
+
+.required { color: red; }
+
+.comment-awaiting-moderation { /* Green background color to make moderation seem less aggressive */
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    // font-family: 'Lato', sans-serif;
+	font-family: 'Cormorant Garamond', serif;
+
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #fff;
+    color: hsl(0, 0%, 100%);
+    background: #84bd68;
+    background: hsl(100, 39%, 57%);
+}
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

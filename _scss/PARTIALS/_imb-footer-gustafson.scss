@@ -1,0 +1,136 @@
+/**
+ *
+ * Footer Styles
+ *
+ */
+
+.footer-container {
+    background-image: url(/wp-content/uploads/2017/02/footer-bg.png);
+    background-position: bottom center;
+    background-size: cover;		
+
+}
+
+#footer-main {
+
+	text-align: center;
+	
+	#copyright {
+
+		padding-top: 2rem;
+		padding-bottom: 3rem;
+
+		h4 {
+			font-size: 1.4rem;
+			font-weight: 700;
+			line-height: 1.4rem;
+
+		}
+		
+	}
+
+	.footer-body {
+		padding-top: 3rem;
+
+	}
+
+	/**
+	 *
+	 * Footer Widgets
+	 *
+	 */
+	
+
+	.widget-footer {
+		padding-left: 0;
+
+		color: lighten(grey, 30%);
+
+		.widget-title {
+			color: $gray-lighter;
+			padding-bottom: 2rem;
+			padding-top: 5rem;
+		}
+		ul {
+			padding-left: 0;
+		}
+
+		li {
+			display: inline-block;
+			margin-bottom: .2rem;
+			padding: 1rem;
+			list-style: none;
+			@include transition(all 0.5s ease-in-out);
+
+			&:hover {
+				background-color: $steel;
+
+			}
+		}
+
+		a {
+			color: lighten(grey, 30%);
+			font-size: 2rem;
+
+			
+			&:hover {
+				color: white;
+			}
+		}
+	}
+
+	/**
+	 *
+	 * Footer Menu
+	 *
+	 */
+	
+
+	#menu-menu-2 {
+		margin-top: 5rem;
+		text-align: center;
+		li {
+			display: inline-block;
+			background-color: transparent;
+
+			a {
+				// font-family: 'Slabo 27px', serif;
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 2rem;
+				font-weight: 300;	
+				color: $imb-primary;
+
+				&:hover {
+					color: $imb-teal;
+				}
+			}
+		}
+	}
+
+	.footer-social {
+
+		padding-top: 2rem;
+
+		li {
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			background-color: transparent;
+			border: 2px solid $imb-teal;
+
+			&:hover {
+				background-color: $imb-teal;
+				i {
+					color: white;
+				}
+
+			}
+
+			i {
+				font-size: 2.3rem;
+				color: lighten( $imb-gray, 30% );
+			}
+		}
+	}
+}
+

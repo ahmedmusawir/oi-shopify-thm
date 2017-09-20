@@ -1,0 +1,69 @@
+#imb-home-testimonial {
+	padding-top: 5rem;
+	padding-bottom: 10rem;
+	// margin-bottom: 10rem;
+	background-color: lighten( $imb-secondary, 35% );
+	background-image: url('/wp-content/uploads/2017/07/dot-patterns-green-50x50.png');
+	// background-image: url(/wp-content/uploads/2017/07/background-transparent-awsome.jpg);
+	min-height: 700px;
+
+	.content-box {
+
+		#testimonial-slider {
+			#carousel-example-captions {
+
+				.carousel-indicators {
+					margin-top: 15rem;
+					top: 60%;
+					// border: 1rem solid yellow;
+					@media ( max-width: 550px ) {
+						display: none;
+					}
+
+					.caption-image {
+						height: 50px;
+						width: 50px;
+					}
+					.caption-image.active {
+						background-color: $imb-primary;
+					}
+				}
+				.carousel-inner {
+					min-height: 430px;
+				}
+				.carousel-control.left {
+					background-image: none !important;
+				}
+				.carousel-control.right {
+					background-image: none !important;
+				}
+
+				.item {
+					img {
+						width: 10%;
+					}
+					i {
+						font-size: 4rem;
+						color: lighten( $gray-light, 10% );
+					}
+
+					h4 {
+						font-size: 1.5rem;
+					}
+
+					.moose-caption {
+						text-align: center;
+						p {
+							font-weight: 300;
+							font-size: 2rem;
+						}
+					}				
+				}
+			}			
+		}
+
+		
+		
+	}
+
+}

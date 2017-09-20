@@ -1,0 +1,50 @@
+/**
+ *
+ * About Page Roadmap
+ *
+ */
+
+
+#imb-aboutpg-roadmap {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+
+	// background-color: $imb-primary;
+	background: url(/wp-content/uploads/2017/07/skulls-very-light.jpg) fixed;
+
+	.content-box {
+		text-align: center;
+
+		.image-box {
+			margin-top: 5rem;
+			margin-bottom: 3rem;
+
+			.icon-box {
+				padding-bottom: 5rem;
+				width: 150px;
+				height: 150px;
+				border: 5px dotted $imb-primary;
+				border-radius: 50%;
+				// background-color: $imb-primary;
+
+				i {
+					padding-top: 3.5rem;
+					color: $imb-primary;
+				}
+			}
+			.roadmap-image-text {
+				.subheadline {
+					margin-bottom: 3rem;
+					font-size: 3.5rem;
+					font-weight: 300;
+				}
+				.text-only {
+					min-height: 100px;
+					color: $imb-third;
+					font-weight: 300;
+				}
+			}
+		}
+	}
+
+}
