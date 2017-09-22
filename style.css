@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: The IMB Theme for JENNIFER BROWN
+Theme Name: The IMB Theme for SHOPIFY DEV
 Theme URI: http://www.inspiredmommyboss.com
 Description: This is the one built from scratch for JENNIFER BROWN
 Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, post-formats, responsive-layout, theme-options, translation-ready
@@ -6574,7 +6574,76 @@ img {
         margin: auto;
         margin-bottom: 3rem; }
 
-/*=====  End of Start page style END  ======*/
+/*=====  End of About page style END  ======*/
+/*==========================================
+=            SHOPIFY STORE PAGE            =
+==========================================*/
+/**
+ *
+ * VIDEO PAGE CATEGORY INDEX BLOCK
+ *
+ */
+#wpfree-video-page-category-index-block {
+  background-color: #eeeeee;
+  min-height: 600px;
+  padding-top: 5rem;
+  padding-bottom: 6rem; }
+  #wpfree-video-page-category-index-block .content-box {
+    text-align: center; }
+    #wpfree-video-page-category-index-block .content-box .flex-item {
+      margin-bottom: 2rem; }
+    @media (min-width: 700px) {
+      #wpfree-video-page-category-index-block .content-box .flex-container {
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -moz-box-orient: horizontal;
+        box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        -webkit-box-pack: distribute;
+        -moz-box-pack: distribute;
+        box-pack: distribute;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        -ms-justify-content: space-around;
+        -o-justify-content: space-around;
+        justify-content: space-around;
+        -ms-flex-pack: distribute;
+        flex-wrap: wrap; }
+        #wpfree-video-page-category-index-block .content-box .flex-container .wshop-product-module {
+          margin-bottom: 3rem;
+          width: 350px; } }
+    #wpfree-video-page-category-index-block .content-box .text-content {
+      margin-bottom: 5rem; }
+    #wpfree-video-page-category-index-block .content-box .content {
+      background-color: #F9F9F9;
+      padding: 4rem 2rem;
+      box-shadow: 1px 1px 6px #b3b3b3;
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      transition: all 2s ease-in-out; }
+      #wpfree-video-page-category-index-block .content-box .content:hover {
+        box-shadow: inset 1px 1px 6px #b3b3b3; }
+      #wpfree-video-page-category-index-block .content-box .content .image-holder img:hover {
+        opacity: .5; }
+      #wpfree-video-page-category-index-block .content-box .content .button-holder {
+        margin-top: 3rem;
+        margin-bottom: 2rem; }
+        #wpfree-video-page-category-index-block .content-box .content .button-holder .btn {
+          border-radius: 50px; }
+
+/*=====  End of SHOPIFY STORE PAGE  ======*/
 /*====================================
 =            Work With Me            =
 ====================================*/

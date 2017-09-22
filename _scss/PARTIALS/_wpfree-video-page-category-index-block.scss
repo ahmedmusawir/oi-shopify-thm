@@ -1,0 +1,84 @@
+/**
+ *
+ * VIDEO PAGE CATEGORY INDEX BLOCK
+ *
+ */
+
+
+#wpfree-video-page-category-index-block {
+	// background-color: lighten( $smoke, 2% );
+	background-color: lighten( $smoke, 0% );
+	min-height: 600px;
+	padding-top: 5rem;
+	padding-bottom: 6rem;
+
+
+	.content-box {
+		text-align: center;
+
+		.flex-item {
+			margin-bottom: 2rem;
+		}
+
+		@media ( min-width: 700px ) {
+
+			.flex-container {
+			  @include display(flex);
+			  @include flex-direction(row);
+			  @include justify-content(space-around);
+			  flex-wrap: wrap;
+
+			  .wshop-product-module {
+				margin-bottom: 3rem;
+				width: 350px;							  	
+			  }
+			 //  .flex-item {
+				// margin-bottom: 3rem;
+				// width: 350px;							  	
+			 //  }		
+
+			}
+		}			
+
+		.text-content {
+			margin-bottom: 5rem;
+		}
+
+		.content {
+			background-color: $snow;
+			padding: 4rem 2rem;
+
+			box-shadow: 1px 1px 6px lighten( $steel, 30% );
+			@include transition(all 2s ease-in-out);
+			&:hover {
+				box-shadow: inset 1px 1px 6px  lighten( $steel, 30% );
+			}	
+			
+
+			.image-holder {
+				img {
+					// border-radius: 50%;
+					&:hover {
+						opacity: .5;
+					}
+				}
+			}
+			.button-holder {
+				margin-top: 3rem;
+				margin-bottom: 2rem;
+				.btn {
+					border-radius: 50px;
+				}
+			}
+		}
+	
+	}
+	
+}
+
+// .parent {
+//   @include align-items(stretch);
+//   @include display(flex);
+//   @include flex-direction(row);
+//   @include justify-content(flex-start);
+// }
