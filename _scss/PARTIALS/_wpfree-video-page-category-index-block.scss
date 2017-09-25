@@ -6,8 +6,8 @@
 
 
 #wpfree-video-page-category-index-block {
-	// background-color: lighten( $smoke, 2% );
-	background-color: lighten( $smoke, 0% );
+	background-color: lighten( $smoke, 2% );
+	// background-color: lighten( $smoke, 0% );
 	min-height: 600px;
 	padding-top: 5rem;
 	padding-bottom: 6rem;
@@ -16,61 +16,91 @@
 	.content-box {
 		text-align: center;
 
-		.flex-item {
-			margin-bottom: 2rem;
-		}
+		.flex-container {
+			.wshop-product-module {
+				margin-bottom: 1rem;
+				// border: 2px solid red;
+				.product-wrapper {
+					background-color: $snow;
+					padding: 4rem 2rem;
+					// border: 3px solid red;
 
+					box-shadow: 1px 1px 6px lighten( $steel, 30% );
+					@include transition(all 2s ease-in-out);
+					&:hover {
+						box-shadow: inset 1px 1px 6px  lighten( $steel, 30% );
+					}	
+					
+
+					.image-holder {
+						img {
+							// border-radius: 50%;
+							&:hover {
+								opacity: .5;
+							}
+						}
+					}
+					.button-holder {
+						margin-top: 3rem;
+						margin-bottom: 2rem;
+						.btn {
+							border-radius: 50px;
+						}
+					}
+				}			
+			}
+
+		}
 		@media ( min-width: 700px ) {
 
 			.flex-container {
-			  @include display(flex);
-			  @include flex-direction(row);
-			  @include justify-content(space-around);
-			  flex-wrap: wrap;
+			  // @include display(flex);
+			  // @include flex-direction(row);
+			  // @include justify-content(space-around);
+			  // flex-wrap: wrap;
 
-			  .wshop-product-module {
-				margin-bottom: 3rem;
-				width: 350px;							  	
-			  }
-			 //  .flex-item {
-				// margin-bottom: 3rem;
-				// width: 350px;							  	
-			 //  }		
+			  .product-wrapper {
+			  	box-shadow: 1px 1px 1px lighten( $steel, 30% );
+				display: inline-block;
+				overflow: hidden;
+				margin-bottom: 1rem;
+						  	
+				
+				page-break-inside: avoid; /* For Firefox. */
+  				-webkit-column-break-inside: avoid; /* For Chrome & friends. */
+  				break-inside: avoid; /* For standard browsers like IE. :-) */
+				-webkit-backface-visibility: hidden;			  	
+			  }		
 
+				-webkit-column-count: 3;
+				-moz-column-count: 3;
+				column-count: 3;
+
+				-webkit-column-width: 345px;
+				-moz-column-width: 345px;
+				column-width: 345px;
+
+				-webkit-column-gap: 25px;
+				-moz-column-gap: 25px;
+				column-gap: 25px;
+
+				.chrome {
+					display: block;
+				}
+				.safari {
+					box-shadow: 1px 1px 1px lighten( $steel, 30% );
+					display: inline-block;
+					overflow: hidden;
+				}
 			}
+
 		}			
 
 		.text-content {
 			margin-bottom: 5rem;
 		}
 
-		.content {
-			background-color: $snow;
-			padding: 4rem 2rem;
 
-			box-shadow: 1px 1px 6px lighten( $steel, 30% );
-			@include transition(all 2s ease-in-out);
-			&:hover {
-				box-shadow: inset 1px 1px 6px  lighten( $steel, 30% );
-			}	
-			
-
-			.image-holder {
-				img {
-					// border-radius: 50%;
-					&:hover {
-						opacity: .5;
-					}
-				}
-			}
-			.button-holder {
-				margin-top: 3rem;
-				margin-bottom: 2rem;
-				.btn {
-					border-radius: 50px;
-				}
-			}
-		}
 	
 	}
 	

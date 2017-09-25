@@ -6584,64 +6584,61 @@ img {
  *
  */
 #wpfree-video-page-category-index-block {
-  background-color: #eeeeee;
+  background-color: #f3f3f3;
   min-height: 600px;
   padding-top: 5rem;
   padding-bottom: 6rem; }
   #wpfree-video-page-category-index-block .content-box {
     text-align: center; }
-    #wpfree-video-page-category-index-block .content-box .flex-item {
-      margin-bottom: 2rem; }
+    #wpfree-video-page-category-index-block .content-box .flex-container .wshop-product-module {
+      margin-bottom: 1rem; }
+      #wpfree-video-page-category-index-block .content-box .flex-container .wshop-product-module .product-wrapper {
+        background-color: #F9F9F9;
+        padding: 4rem 2rem;
+        box-shadow: 1px 1px 6px #b3b3b3;
+        -webkit-transition: all 2s ease-in-out;
+        -moz-transition: all 2s ease-in-out;
+        transition: all 2s ease-in-out; }
+        #wpfree-video-page-category-index-block .content-box .flex-container .wshop-product-module .product-wrapper:hover {
+          box-shadow: inset 1px 1px 6px #b3b3b3; }
+        #wpfree-video-page-category-index-block .content-box .flex-container .wshop-product-module .product-wrapper .image-holder img:hover {
+          opacity: .5; }
+        #wpfree-video-page-category-index-block .content-box .flex-container .wshop-product-module .product-wrapper .button-holder {
+          margin-top: 3rem;
+          margin-bottom: 2rem; }
+          #wpfree-video-page-category-index-block .content-box .flex-container .wshop-product-module .product-wrapper .button-holder .btn {
+            border-radius: 50px; }
     @media (min-width: 700px) {
       #wpfree-video-page-category-index-block .content-box .flex-container {
-        display: -webkit-box;
-        display: -moz-box;
-        display: box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -moz-box-orient: horizontal;
-        box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -moz-box-direction: normal;
-        box-direction: normal;
-        -webkit-flex-direction: row;
-        -moz-flex-direction: row;
-        flex-direction: row;
-        -ms-flex-direction: row;
-        -webkit-box-pack: distribute;
-        -moz-box-pack: distribute;
-        box-pack: distribute;
-        -webkit-justify-content: space-around;
-        -moz-justify-content: space-around;
-        -ms-justify-content: space-around;
-        -o-justify-content: space-around;
-        justify-content: space-around;
-        -ms-flex-pack: distribute;
-        flex-wrap: wrap; }
-        #wpfree-video-page-category-index-block .content-box .flex-container .wshop-product-module {
-          margin-bottom: 3rem;
-          width: 350px; } }
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-width: 345px;
+        -moz-column-width: 345px;
+        column-width: 345px;
+        -webkit-column-gap: 25px;
+        -moz-column-gap: 25px;
+        column-gap: 25px; }
+        #wpfree-video-page-category-index-block .content-box .flex-container .product-wrapper {
+          box-shadow: 1px 1px 1px #b3b3b3;
+          display: inline-block;
+          overflow: hidden;
+          margin-bottom: 1rem;
+          page-break-inside: avoid;
+          /* For Firefox. */
+          -webkit-column-break-inside: avoid;
+          /* For Chrome & friends. */
+          break-inside: avoid;
+          /* For standard browsers like IE. :-) */
+          -webkit-backface-visibility: hidden; }
+        #wpfree-video-page-category-index-block .content-box .flex-container .chrome {
+          display: block; }
+        #wpfree-video-page-category-index-block .content-box .flex-container .safari {
+          box-shadow: 1px 1px 1px #b3b3b3;
+          display: inline-block;
+          overflow: hidden; } }
     #wpfree-video-page-category-index-block .content-box .text-content {
       margin-bottom: 5rem; }
-    #wpfree-video-page-category-index-block .content-box .content {
-      background-color: #F9F9F9;
-      padding: 4rem 2rem;
-      box-shadow: 1px 1px 6px #b3b3b3;
-      -webkit-transition: all 2s ease-in-out;
-      -moz-transition: all 2s ease-in-out;
-      transition: all 2s ease-in-out; }
-      #wpfree-video-page-category-index-block .content-box .content:hover {
-        box-shadow: inset 1px 1px 6px #b3b3b3; }
-      #wpfree-video-page-category-index-block .content-box .content .image-holder img:hover {
-        opacity: .5; }
-      #wpfree-video-page-category-index-block .content-box .content .button-holder {
-        margin-top: 3rem;
-        margin-bottom: 2rem; }
-        #wpfree-video-page-category-index-block .content-box .content .button-holder .btn {
-          border-radius: 50px; }
 
 /*=====  End of SHOPIFY STORE PAGE  ======*/
 /*====================================

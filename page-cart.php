@@ -44,14 +44,14 @@ get_header('shopify'); ?>
 		        
 		        <!-- <single-image :item="item"/> -->
 				<br><br><br>
-				<!-- {{ item }} -->
+				{{ item }}
 
 		    </div>	        
 
 	        <checkout-link class="btn btn-primary pull-right">Check Out Now</checkout-link>
 
 		</div>
-    </article>
+   </article>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
